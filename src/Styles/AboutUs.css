@@ -96,7 +96,7 @@
     background-image: url("https://template.rankkr.com/source/2024/1/RR20242025-00005/corporate-events.jpg");
     background-size: cover;
     background-position: center;
-    animation: pulse 3s infinite alternate;
+   
   }
   
   @keyframes pulse {
