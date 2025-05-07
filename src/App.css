@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-blue: #101016;
+  --medium-blue: #1a1a32;
+  --light-blue: #11111b;
+  --dark-purple: #4a1a7f;
+  --medium-purple: #6a2a9f;
+  --light-purple: #8a3abf;
+  --white: #ffffff;
+  --light-gray: #f5f5f5;
+  --dark-gray: #333333;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Initial Loader Animation */
+.initial-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--dark-blue), var(--dark-purple));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader-diamond-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  transform: rotate(45deg);
+}
+
+.initial-loader-diamond {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: diamondPulse 2s infinite alternate;
+  opacity: 0;
+}
+
+.initial-loader-diamond-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--light-blue), var(--light-purple));
+  box-shadow: 0 0 20px rgba(138, 58, 191, 0.7);
+}
+
+/* Animation delay for each diamond */
+.initial-loader-diamond.diamond-0 {
+  animation-delay: 0s;
+}
+.initial-loader-diamond.diamond-1 {
+  animation-delay: 0.1s;
+}
+.initial-loader-diamond.diamond-2 {
+  animation-delay: 0.2s;
+}
+.initial-loader-diamond.diamond-3 {
+  animation-delay: 0.3s;
+}
+.initial-loader-diamond.diamond-4 {
+  animation-delay: 0.4s;
+}
+.initial-loader-diamond.diamond-5 {
+  animation-delay: 0.5s;
+}
+.initial-loader-diamond.diamond-6 {
+  animation-delay: 0.6s;
+}
+.initial-loader-diamond.diamond-7 {
+  animation-delay: 0.7s;
+}
+.initial-loader-diamond.diamond-8 {
+  animation-delay: 0.8s;
+}
+
+@keyframes diamondPulse {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+}
+
+.initial-loader-text {
+  color: var(--white);
+  margin-top: 20px;
+  font-size: 28px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  animation: textGlow 2s infinite alternate;
+  transform: rotate(-45deg);
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 5px rgba(138, 58, 191, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(138, 58, 191, 1), 0 0 30px rgba(58, 58, 159, 0.8);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .loader-diamond-container {
+    width: 120px;
+    height: 120px;
+  }
+
+  .initial-loader-text {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .loader-diamond-container {
+    width: 90px;
+    height: 90px;
+    gap: 10px;
+  }
+
+  .initial-loader-text {
+    font-size: 20px;
+  }
+}

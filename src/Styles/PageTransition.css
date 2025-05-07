@@ -1,0 +1,139 @@
+.page-transition {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  .page-transition.fadeIn {
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  .page-transition.fadeOut {
+    animation: fadeOut 0.5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  /* Loader Styles */
+  .page-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--dark-blue), var(--dark-purple));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .loader-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .loader-diamond-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+  
+  .loader-diamond {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+    animation: pulse 1.5s infinite alternate;
+  }
+  
+  .loader-diamond-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--light-blue), var(--light-purple));
+    box-shadow: 0 0 15px rgba(138, 58, 191, 0.6);
+  }
+  
+  .loader-diamond.diamond-0 {
+    animation-delay: 0s;
+  }
+  
+  .loader-diamond.diamond-1 {
+    animation-delay: 0.2s;
+  }
+  
+  .loader-diamond.diamond-2 {
+    animation-delay: 0.4s;
+  }
+  
+  .loader-diamond.diamond-3 {
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: rotate(45deg) scale(0.8);
+      opacity: 0.7;
+    }
+    100% {
+      transform: rotate(45deg) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .loader-text {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    position: relative;
+  }
+  
+  .loader-text::after {
+    content: "...";
+    position: absolute;
+    animation: ellipsis 1.5s infinite;
+    width: 24px;
+    text-align: left;
+  }
+  
+  @keyframes ellipsis {
+    0% {
+      content: ".";
+    }
+    33% {
+      content: "..";
+    }
+    66% {
+      content: "...";
+    }
+  }
+  
+  /* Preserve Banner Animations */
+  .banner-section {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+  
