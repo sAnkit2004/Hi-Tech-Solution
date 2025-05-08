@@ -30,7 +30,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 CGI-TECH. All Rights Reserved.</p>
+        <p>&copy; 2024 HI-TECH. All Rights Reserved.</p>
       </div>
     </footer>
   )

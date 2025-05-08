@@ -18,7 +18,7 @@ function About() {
           <div className="section-text">
             <h2>Who We Are</h2>
             <p>
-              Softech is a Nationally Recognized premier professional Organisation grown into A Reliable Name in the
+              HI-TECH is a Nationally Recognized premier professional Organisation grown into A Reliable Name in the
               field of Audio-Visuals, Led Displays, Multimedia and Hi-tech Equipment Resource.
             </p>
             <p>

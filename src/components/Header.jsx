@@ -41,7 +41,7 @@ function Header() {
             <img src={logo || "/placeholder.svg"} alt="Softech Group Logo" className="logo" />
           </Link> */}
           <div className="logo-text">
-            <h1>CGI-TECh</h1>
+            <h1>HI-TECh</h1>
             <p>Awards for Excellence & Quality</p>
             <p className="years">24 years of Excellence.</p>
           </div>

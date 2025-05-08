@@ -50,7 +50,7 @@ function AppContent() {
               </div>
             ))}
           </div>
-          <h2 className="initial-loader-text">CGI-TECH</h2>
+          <h2 className="initial-loader-text">HI-TECH</h2>
         </div>
       ) : (
         <>

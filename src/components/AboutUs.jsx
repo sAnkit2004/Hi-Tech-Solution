@@ -7,7 +7,7 @@ function AboutUs() {
         <div className="about-content">
           <h2 className="section-title">About Us</h2>
           <p>
-            Softech is a Nationally Recognized premier professional Organisation grown into A Reliable Name in the field
+            HI-TECH is a Nationally Recognized premier professional Organisation grown into A Reliable Name in the field
             of Audio-Visuals, Led Displays, Multimedia and Hi-tech Equipment Resource.
           </p>
           <p>

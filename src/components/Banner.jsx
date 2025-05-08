@@ -142,8 +142,8 @@ function Banner() {
       <div className="banner-container">
         <div className="banner-content">
           <div className="animated-heading">
-            <h1 className="glitch" data-text="CGI-TECH">
-              CGI-TECH
+            <h1 className="glitch" data-text="HI-TECH">
+              HI-TECH
             </h1>
             <div className="subtitle">
               <span className="typing-text">Premier Audio Visual Solutions</span>
@@ -194,7 +194,7 @@ function Banner() {
 
         <div className="banner-sidebar">
           <div className="sidebar-title">
-            <h2>CGI-TECH</h2>
+            <h2>HI-TECH</h2>
           </div>
           <div className="sidebar-menu">
             <ul>
