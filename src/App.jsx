@@ -11,7 +11,7 @@ import AvShowsEvents from "./pages/AvShowsEvents"
 import LedDisplay from "./Pages/LedDisplay"
 import AvIntegration from "./Pages/AvIntegration"
 import HomeTheatre from "./Pages/HomeTheatre"
-import Clients from "./Pages/Clients"
+
 import Contact from "./Pages/Contact"
 import PageTransition from "./components/PageTransition"
 
@@ -65,7 +65,7 @@ function AppContent() {
                 <Route path="/led-display" element={<LedDisplay />} />
                 <Route path="/av-integration" element={<AvIntegration />} />
                 <Route path="/home-theatre" element={<HomeTheatre />} />
-                <Route path="/clients" element={<Clients />} />
+             
                 <Route path="/contact" element={<Contact />} />
               </Routes>
             </div>
