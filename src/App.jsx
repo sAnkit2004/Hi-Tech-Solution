@@ -15,7 +15,7 @@ import Clients from "./Pages/Clients"
 import Contact from "./Pages/Contact"
 import PageTransition from "./components/PageTransition"
 
-// ScrollToTop component to handle scrolling to top on page change
+
 function ScrollToTop() {
   const { pathname } = useLocation()
 
