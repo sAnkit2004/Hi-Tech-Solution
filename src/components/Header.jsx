@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { Link, useLocation } from "react-router-dom"
 import "../styles/Header.css"
-// import logo from "../assets/logo.png"
+import logo from "../assets/logo.png" // Update with your logo path
 
 function Header() {
   const [scrolled, setScrolled] = useState(false)
@@ -37,14 +37,9 @@ function Header() {
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className="header-container">
         <div className="logo-container">
-          {/* <Link to="/">
-            <img src={logo || "/placeholder.svg"} alt="Softech Group Logo" className="logo" />
-          </Link> */}
-          <div className="logo-text">
-            <h1>HI-TECh</h1>
-            <p>Awards for Excellence & Quality</p>
-            <p className="years">24 years of Excellence.</p>
-          </div>
+          <Link to="/">
+            <div className="logo"><img src={logo} alt="" /></div>
+          </Link>
         </div>
 
         <div className="mobile-menu-button" onClick={toggleMobileMenu}>
@@ -85,11 +80,11 @@ function Header() {
                 HOME THEATRE
               </Link>
             </li>
-            <li className={location.pathname === "/clients" ? "active" : ""}>
+            {/* <li className={location.pathname === "/clients" ? "active" : ""}>
               <Link to="/clients" onClick={closeMobileMenu}>
                 CLIENTS
               </Link>
-            </li>
+            </li> */}
             <li className={location.pathname === "/contact" ? "active" : ""}>
               <Link to="/contact" onClick={closeMobileMenu}>
                 CONTACT US

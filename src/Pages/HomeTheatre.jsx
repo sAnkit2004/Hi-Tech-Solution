@@ -1,4 +1,11 @@
 import "../styles/Pages.css"
+import image7 from "../assets/image-7.jpg"
+import image8 from "../assets/image-8.jpg"
+import image9 from "../assets/image-9.jpg"
+import image10 from "../assets/image-10.jpg"
+import image11 from "../assets/image-11.jpg"
+import image12 from "../assets/image-12.jpg"
+import image13 from "../assets/image-13.jpeg"
 
 function HomeTheatre() {
   return (
@@ -10,7 +17,7 @@ function HomeTheatre() {
       <div className="page-content">
         <section className="content-section">
           <div className="section-image">
-            <img src="https://via.placeholder.com/600x400/3a3a9f/ffffff?text=Home+Theatre" alt="Home Theatre" />
+            <img src={image7} alt="Home Theatre" />
           </div>
           <div className="section-text">
             <h2>Custom Home Entertainment</h2>
@@ -28,7 +35,7 @@ function HomeTheatre() {
 
         <section className="content-section reverse">
           <div className="section-image">
-            <img src="https://via.placeholder.com/600x400/4a1a7f/ffffff?text=Audio+Systems" alt="Audio Systems" />
+            <img src={image8} alt="Audio Systems" />
           </div>
           <div className="section-text">
             <h2>Premium Audio Solutions</h2>
@@ -46,7 +53,7 @@ function HomeTheatre() {
 
         <section className="content-section">
           <div className="section-image">
-            <img src="https://via.placeholder.com/600x400/6a2a9f/ffffff?text=Video+Systems" alt="Video Systems" />
+            <img src={image10} alt="Video Systems" />
           </div>
           <div className="section-text">
             <h2>Stunning Visual Experiences</h2>
@@ -64,7 +71,7 @@ function HomeTheatre() {
 
         <section className="content-section reverse">
           <div className="section-image">
-            <img src="https://via.placeholder.com/600x400/8a3abf/ffffff?text=Smart+Control" alt="Smart Control" />
+            <img src={image9} alt="Smart Control" />
           </div>
           <div className="section-text">
             <h2>Intuitive Control Systems</h2>
@@ -84,19 +91,19 @@ function HomeTheatre() {
           <h2>Recent Projects</h2>
           <div className="gallery-grid">
             <div className="gallery-item">
-              <img src="https://via.placeholder.com/300x200/3a3a9f/ffffff?text=Theatre+Room" alt="Theatre Room" />
+              <img src={image11} alt="Theatre Room" />
               <p>Dedicated Cinema Room</p>
             </div>
             <div className="gallery-item">
-              <img src="https://via.placeholder.com/300x200/4a1a7f/ffffff?text=Media+Room" alt="Media Room" />
+              <img src={image12} alt="Media Room" />
               <p>Multi-purpose Media Room</p>
             </div>
             <div className="gallery-item">
-              <img src="https://via.placeholder.com/300x200/6a2a9f/ffffff?text=Living+Room" alt="Living Room" />
+              <img src={image13} alt="Living Room" />
               <p>Living Room Integration</p>
             </div>
             <div className="gallery-item">
-              <img src="https://via.placeholder.com/300x200/8a3abf/ffffff?text=Outdoor+Cinema" alt="Outdoor Cinema" />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCvrGtPvF5Ae6vEDA3BEuaHoDRd2GPcjSLyA&s" alt="Outdoor Cinema" />
               <p>Outdoor Entertainment Space</p>
             </div>
           </div>

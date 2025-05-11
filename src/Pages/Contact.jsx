@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import emailjs from "emailjs-com" // Import EmailJS
 import "../styles/Pages.css"
 import "../styles/Contact.css"
 
@@ -25,21 +26,36 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // In a real application, you would submit the form data to a server here
-    console.log("Form submitted:", formData)
-    setFormSubmitted(true)
 
-    // Reset form after submission
-    setTimeout(() => {
-      setFormSubmitted(false)
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        service: "",
-        message: "",
-      })
-    }, 5000)
+    // Send form data via EmailJS
+    emailjs
+      .send(
+        "service_ccc7uvi", // Replace with your EmailJS service ID
+        "template_sqqmfla", // Replace with your EmailJS template ID
+        formData,
+        "1TJtBWYBsrCmdmzN0" // Replace with your EmailJS user ID
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text)
+          setFormSubmitted(true)
+
+          // Reset form after submission
+          setTimeout(() => {
+            setFormSubmitted(false)
+            setFormData({
+              name: "",
+              email: "",
+              phone: "",
+              service: "",
+              message: "",
+            })
+          }, 5000)
+        },
+        (error) => {
+          console.error("FAILED...", error)
+        }
+      )
   }
 
   return (
@@ -115,8 +131,8 @@ function Contact() {
                 <div className="info-icon address-icon"></div>
                 <div className="info-content">
                   <h3>Address</h3>
-                  <p>123 AV Street, Tech Park</p>
-                  <p>New Delhi, India, 110001</p>
+                  <p>S-466 School Block Laxmi Nagar</p>
+                  <p>New Delhi</p>
                 </div>
               </div>
 
@@ -124,8 +140,8 @@ function Contact() {
                 <div className="info-icon phone-icon"></div>
                 <div className="info-content">
                   <h3>Phone</h3>
-                  <p>+91 1234567890</p>
-                  <p>+91 9876543210</p>
+                  <p>+91 9555006889</p>
+                  
                 </div>
               </div>
 
@@ -133,12 +149,12 @@ function Contact() {
                 <div className="info-icon email-icon"></div>
                 <div className="info-content">
                   <h3>Email</h3>
-                  <p>info@softechgroup.com</p>
-                  <p>support@softechgroup.com</p>
+                  <p>hitechaudiovisual23@gmail.com</p>
+                  
                 </div>
               </div>
 
-              <div className="info-item">
+              {/* <div className="info-item">
                 <div className="info-icon hours-icon"></div>
                 <div className="info-content">
                   <h3>Business Hours</h3>
@@ -146,11 +162,11 @@ function Contact() {
                   <p>Saturday: 10:00 AM to 2:00 PM</p>
                   <p>Sunday: Closed</p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="social-links">
                 <a href="#" className="social-link facebook-icon"></a>
-                <a href="#" className="social-link twitter-icon"></a>
+                
                 <a href="#" className="social-link instagram-icon"></a>
                 <a href="#" className="social-link linkedin-icon"></a>
               </div>
@@ -161,13 +177,16 @@ function Contact() {
         <section className="map-section">
           <h2>Find Us</h2>
           <div className="map-container">
-            {/* In a real application, you would embed a Google Map or similar here */}
-            <div className="map-placeholder">
-              <img
-                src="https://via.placeholder.com/1200x400/3a3a9f/ffffff?text=Google+Map+Location"
-                alt="Map Location"
-              />
-            </div>
+            <iframe
+              title="Google Map Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.8393748479!2d77.06889999999999!3d28.527280000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3b3c3b3c3b3%3A0x3b3c3b3c3b3c3b3c!2sNew%20Delhi%2C%20India!5e0!3m2!1sen!2sin!4v1234567890123"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </section>
       </div>

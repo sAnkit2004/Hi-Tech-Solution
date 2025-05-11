@@ -6,9 +6,9 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-section">
           <h3>Contact Us</h3>
-          <p>Email: info@softechgroup.com</p>
-          <p>Phone: +91 1234567890</p>
-          <p>Address: Softech Group, India</p>
+          <p>Email: hitechaudiovisual23@gmail.com</p>
+          <p>Phone: +91 95550 06889</p>
+          <p>Address: S-466    School Block Laxmi Nagar, New Delhi</p>
         </div>
         <div className="footer-section">
           <h3>Services</h3>
@@ -23,14 +23,17 @@ function Footer() {
           <h3>Follow Us</h3>
           <div className="social-icons">
             <a href="#" className="social-icon facebook"></a>
-            <a href="#" className="social-icon twitter"></a>
+           
             <a href="#" className="social-icon instagram"></a>
             <a href="#" className="social-icon linkedin"></a>
           </div>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 HI-TECH. All Rights Reserved.</p>
+        <p className="footer-left">&copy; 2024 HI-TECH. All Rights Reserved.</p>
+        <p className="footer-right">
+          Designed by: <a href="https://www.compilego.com" target="_blank" rel="noopener noreferrer">CompileGo Technologies</a>
+        </p>
       </div>
     </footer>
   )

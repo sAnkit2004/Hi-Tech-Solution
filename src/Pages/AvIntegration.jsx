@@ -1,4 +1,7 @@
 import "../styles/Pages.css"
+import image4 from "../assets/image-4.jpg"
+import image5 from "../assets/image-5.jpg" 
+import image6 from "../assets/image6.jpg"
 
 function AvIntegration() {
   return (
@@ -10,7 +13,7 @@ function AvIntegration() {
       <div className="page-content">
         <section className="content-section">
           <div className="section-image">
-            <img src="https://via.placeholder.com/600x400/3a3a9f/ffffff?text=AV+Integration" alt="AV Integration" />
+            <img src={image4} alt="AV Integration" />
           </div>
           <div className="section-text">
             <h2>Comprehensive AV Integration</h2>
@@ -29,7 +32,7 @@ function AvIntegration() {
         <section className="content-section reverse">
           <div className="section-image">
             <img
-              src="https://via.placeholder.com/600x400/4a1a7f/ffffff?text=Corporate+Solutions"
+              src={image5}
               alt="Corporate Solutions"
             />
           </div>
@@ -50,7 +53,7 @@ function AvIntegration() {
 
         <section className="content-section">
           <div className="section-image">
-            <img src="https://via.placeholder.com/600x400/6a2a9f/ffffff?text=Commercial+AV" alt="Commercial AV" />
+            <img src={image6} alt="Commercial AV" />
           </div>
           <div className="section-text">
             <h2>Commercial & Public Spaces</h2>

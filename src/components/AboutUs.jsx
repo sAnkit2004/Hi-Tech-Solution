@@ -11,7 +11,7 @@ function AboutUs() {
             of Audio-Visuals, Led Displays, Multimedia and Hi-tech Equipment Resource.
           </p>
           <p>
-            With more than 24 years of Rich experience in the Audio-Visual industry, Softech has carved a Niche for
+            With more than 24 years of Rich experience in the Audio-Visual industry, Hi-Tech has carved a Niche for
             itself in handling Big Shows, Turnkey Solutions and Customized projects.
           </p>
           <p>

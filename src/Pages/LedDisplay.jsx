@@ -1,4 +1,7 @@
 import "../styles/Pages.css"
+import image1 from "../assets/image-1.jpg"
+import image2 from "../assets/image-2.jpg"
+import image3 from "../assets/image-3.jpg"
 
 function LedDisplay() {
   return (
@@ -10,7 +13,7 @@ function LedDisplay() {
       <div className="page-content">
         <section className="content-section">
           <div className="section-image">
-            <img src="https://via.placeholder.com/600x400/3a3a9f/ffffff?text=LED+Displays" alt="LED Displays" />
+            <img src={image1} alt="LED Displays" />
           </div>
           <div className="section-text">
             <h2>High-Quality LED Solutions</h2>
@@ -28,7 +31,7 @@ function LedDisplay() {
 
         <section className="content-section reverse">
           <div className="section-image">
-            <img src="https://via.placeholder.com/600x400/4a1a7f/ffffff?text=Indoor+LED" alt="Indoor LED" />
+            <img src={image3} alt="Indoor LED" />
           </div>
           <div className="section-text">
             <h2>Indoor LED Displays</h2>
@@ -46,7 +49,7 @@ function LedDisplay() {
 
         <section className="content-section">
           <div className="section-image">
-            <img src="https://via.placeholder.com/600x400/6a2a9f/ffffff?text=Outdoor+LED" alt="Outdoor LED" />
+            <img src={image2} alt="Outdoor LED" />
           </div>
           <div className="section-text">
             <h2>Outdoor LED Displays</h2>
