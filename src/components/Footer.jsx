@@ -22,7 +22,7 @@ function Footer() {
         <div className="footer-section">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="#" className="social-icon facebook"></a>
+            <a href="https://www.facebook.com/hitechaudiovisuals" className="social-icon facebook"></a>
            
             <a href="#" className="social-icon instagram"></a>
             <a href="#" className="social-icon linkedin"></a>
