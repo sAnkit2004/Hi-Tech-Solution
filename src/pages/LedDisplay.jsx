@@ -1,5 +1,5 @@
 import "../styles/Pages.css"
-import image1 from "../assets/image-1.jpg"
+import image1 from "../assets/Image-1.jpg"
 import image2 from "../assets/image-2.jpg"
 import image3 from "../assets/image-3.jpg"
 
