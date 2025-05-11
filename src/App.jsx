@@ -20,7 +20,7 @@ function ScrollToTop() {
   const { pathname } = useLocation()
 
   useEffect(() => {
-    // Preserve scroll position for home page to keep banner visible
+   
     if (pathname !== "/") {
       window.scrollTo(0, 0)
     }
