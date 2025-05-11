@@ -154,15 +154,7 @@ function Contact() {
                 </div>
               </div>
 
-              {/* <div className="info-item">
-                <div className="info-icon hours-icon"></div>
-                <div className="info-content">
-                  <h3>Business Hours</h3>
-                  <p>Monday - Friday: 9:00 AM to 6:00 PM</p>
-                  <p>Saturday: 10:00 AM to 2:00 PM</p>
-                  <p>Sunday: Closed</p>
-                </div>
-              </div> */}
+           
 
               <div className="social-links">
                 <a href="#" className="social-link facebook-icon"></a>
