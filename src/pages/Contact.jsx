@@ -157,10 +157,10 @@ function Contact() {
            
 
               <div className="social-links">
-                <a href="#" className="social-link facebook-icon"></a>
+                <a href="https://www.facebook.com/hitechaudiovisuals" className="social-link facebook-icon"></a>
                 
-                <a href="#" className="social-link instagram-icon"></a>
-                <a href="#" className="social-link linkedin-icon"></a>
+                <a href="https://www.instagram.com/hitechaudiovisuals?utm_source=qr&igsh=emFuaXhsdGd4M214" className="social-link instagram-icon"></a>
+                <a href="https://in.linkedin.com/company/hitechaudiovisual" className="social-link linkedin-icon"></a>
               </div>
             </div>
           </div>

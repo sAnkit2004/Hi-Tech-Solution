@@ -9,6 +9,10 @@
   transition: all 0.3s ease;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+.logo img{
+  width: 214px;
+  margin-left: 40px;
+}
 
 .header.scrolled {
   padding: 10px 0;
@@ -171,7 +175,7 @@
 /* Responsive */
 @media (max-width: 1024px) {
   .header-container {
-    padding: 15px 20px;
+    padding: 15px 85px;
   }
 
   .nav-menu li {
@@ -219,16 +223,10 @@
 
  
 
-  /* .logo {
-    width: 50px;
-    height: 50px;
-  } */
+  
   .logo img {
-    
-    margin-left: 100px;
+        width: 185px;
+    margin-left: -45px;
   }
 }
-.logo img{
-  width: 214px;
-  margin-left: 40px;
-}
+

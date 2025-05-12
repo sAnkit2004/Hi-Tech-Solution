@@ -24,8 +24,8 @@ function Footer() {
           <div className="social-icons">
             <a href="https://www.facebook.com/hitechaudiovisuals" className="social-icon facebook"></a>
            
-            <a href="#" className="social-icon instagram"></a>
-            <a href="#" className="social-icon linkedin"></a>
+            <a href="https://www.instagram.com/hitechaudiovisuals?utm_source=qr&igsh=emFuaXhsdGd4M214" className="social-icon instagram"></a>
+            <a href="https://in.linkedin.com/company/hitechaudiovisual" className="social-icon linkedin"></a>
           </div>
         </div>
       </div>
